@@ -1,0 +1,122 @@
+.app-review-section{
+    height: 280px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 3rem 2rem;
+    gap:2rem;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    
+}
+
+
+.box{
+    width:100%;
+    height:100%;
+    padding:1rem;
+   
+}
+
+.feedbacks>p{
+    font-size: 12px;
+}
+.social-media{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:1rem;
+    flex-direction: column;
+    margin-top:0.8rem;
+    text-align: center;
+}
+.social-apps{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+   
+    
+
+}
+.carousel-app{
+    background-color: black;
+    height:450px;
+    padding:2rem 3rem;
+    color:white;
+}
+
+.box-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    
+}
+.image{
+    width: 100%;
+    height:300px;
+    display:flex;
+    background-position: center;
+    align-self: center;
+    object-fit: cover;
+    margin:0 auto;
+    border-radius: 6px;
+    padding-top: 0.6rem;
+}
+
+.title>p{
+    margin-top: 0.8rem;
+}
+.social-apps>a{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media screen and (max-width:968px){
+
+    .social-apps>p{
+        font-size: 14px;
+    }
+    .box{
+        font-size:14px;
+    }
+}
+@media screen and (max-width:768px){
+    .app-review-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        height: 540px;
+        gap:1rem;
+    }
+    .social-apps>p{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .social-apps{
+        gap:0.4rem;
+ 
+    }
+    .box{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:468px){
+    .app-review-section{
+        gap:0.8rem;
+        padding:3rem 1rem;
+    }
+    .social-apps>p{
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    .social-apps{
+        gap:0.4rem;
+    }
+    .box{
+        font-size:10px;
+    }
+}

@@ -1,0 +1,233 @@
+.app-navbar{
+    display: flex;
+    height:4rem;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index:5;
+}
+.app-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-logo>h4{
+    color:lightgray;
+    margin:0 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.6rem;
+}
+.app-navbar-right{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.shooping-cart{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.app-single-section{
+    height: calc(100vh - 4rem);
+}
+.app-navbar-right>p{
+    margin:0 1.6rem;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-btn{
+    margin:0 1rem;
+    cursor: pointer;
+    padding:4px 8px;
+    border-radius: 4px;
+    transition: .5s ease;
+   
+
+}
+
+.app-navbar-right>p:hover{
+    border-bottom: 1px solid white;
+    transition: top .5s ease;
+}
+.sign-up{
+    transition: .5s ease;
+    cursor: pointer;
+    padding:4px 8px;
+    border-radius: 4px;
+}
+.login-btn:hover{
+    background-color: rgb(175, 175, 175);
+    color:white;
+}
+.sign-up:hover{
+    background-color: grey;
+    color:white;
+}
+.app-small-screen-menu{
+    display: none;
+    cursor: pointer;
+}
+.cross{
+    display: none;
+}
+.app-single-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:calc(100vh - 4rem)
+
+}
+.singleitem-card{
+    color:black;
+    display: flex;
+    width:400px;
+    height: 460px;
+    padding:1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    background-color: white;;
+    border-radius: 4px;
+    flex-direction: column;
+}
+.singleitem-card>img{
+    width:320px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+.avatar{
+    position: relative;
+}
+.about-profile{
+    border:none;
+    width:200px;
+    height:100px;
+    position: fixed;
+    top:4rem;
+    right:1rem;
+    z-index:12;
+    background-color: white;
+    padding:0.6rem;
+    border-radius: 4px;
+}
+.about-profile>p{
+    color: black;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.about-profile>button{
+    padding:4px 8px;
+    border-radius: 4px;
+    border: none;
+    color:white;
+    cursor:pointer;
+    background-color: black;
+    margin:1rem 0;
+}
+.about-profile>button:hover{
+  background-color: grey;
+  color:white;
+  transition: 0.5s ease;
+  
+}
+
+@media screen and (max-width:768px) {
+    .app-small-screen-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cross{
+        display: flex;
+    }
+    .app-navbar-right{
+        display: none;
+    }
+    .app-small-screen-list{
+        display: flex;
+        position: fixed;
+        top:4rem;
+        cursor: pointer;
+        align-items: center;
+        left:0;
+        gap:3rem;
+        height:100vh;
+        background-color: black;
+        z-index:5;
+        transition: top 0.8s ease-in-out;
+        width:100%;
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+    .app-small-screen-list>p{
+        text-decoration: none;
+        color:white;
+        font-size: 1.2rem;
+
+    }
+    
+    .login-btn{
+        background-color: black;
+        color:white;
+        font-size: 1.2rem;
+        border: none;
+        transition: none;
+
+    }
+    .sign-up{
+        background-color: black;
+        color:white;
+        font-size: 1.2rem;
+        transition: none;
+        border: none;
+        
+
+    }
+    .app-logo>h4{
+        font-size: 1.4rem;
+    }
+    .app-navbar{
+        padding:1rem;
+    }
+    .nav-button{
+        display:flex;
+        flex-direction: column;
+        gap:2.2rem;
+
+    }
+    
+    
+
+}
+
+@media screen and (max-width:468px){
+    .singleitem-card{
+        width: 340px;
+        height: 480px;
+    }
+    .singleitem-card>img{
+        width:290px;
+
+    }
+
+}
+@media screen and (max-width:400px){
+    .singleitem-card{
+        width: 320px;
+        height: 460px;
+    }
+    .singleitem-card>img{
+        width:280px;
+
+    }
+
+}
