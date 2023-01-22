@@ -17,6 +17,7 @@ const Contactform = () => {
         <input type="text" name="query" value={message.query} onChange={handleAdd} placeholder='write your query'/>
         <input type="text" name="feedback" value={message.feedback} onChange={handleAdd} placeholder='any suggestion'/>
         <button type="submit">Submit</button>
+        <p>thank you</p>
       </form>
     </div>
   )
